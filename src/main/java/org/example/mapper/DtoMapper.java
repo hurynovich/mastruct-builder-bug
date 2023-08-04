@@ -10,5 +10,5 @@ public interface DtoMapper {
 
     @Mapping(target = "customer.id", source = "customerId")
     @Mapping(target = "customer", source = "order.customerData")
-    Order mapOne(OrderDto order);
+    Order mapOrder(OrderDto order);
 }

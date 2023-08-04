@@ -12,7 +12,7 @@ public class Main {
         DtoMapper mapper = Mappers.getMapper(DtoMapper.class);
         OrderDto orderDto = rnd.nextObject(OrderDto.class);
 
-        Order order = mapper.mapOne(orderDto);
+        Order order = mapper.mapOrder(orderDto);
 
         System.out.println(orderDto);
         System.out.println(order);
